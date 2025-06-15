@@ -8,7 +8,7 @@ import {
   XMarkIcon
 } from '@heroicons/react/24/outline';
 import { cn } from '../../utils/cn';
-import { NavItem } from '../../types';
+import type { NavItem } from '../../types';
 
 interface NavbarProps {
   sidebarOpen: boolean;

@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { 
   CurrencyDollarIcon, 
   ChartBarIcon, 
-  TrendingUpIcon,
+  ArrowTrendingUpIcon,
   PlusIcon 
 } from '@heroicons/react/24/outline';
 import Card from '../components/ui/Card';
 import Button from '../components/ui/Button';
-import { Asset, AssetCategory, DashboardStats } from '../types';
+import type { Asset, AssetCategory, DashboardStats } from '../types';
 import { assetService, handleApiError } from '../services/api';
 
 const Dashboard: React.FC = () => {
@@ -140,7 +140,7 @@ const Dashboard: React.FC = () => {
         <Card>
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <TrendingUpIcon className="h-8 w-8 text-primary-600" />
+              <ArrowTrendingUpIcon className="h-8 w-8 text-blue-600" />
             </div>
             <div className="ml-4">
               <p className="text-sm font-medium text-gray-500">Rendimiento</p>

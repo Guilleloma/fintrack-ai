@@ -1,5 +1,5 @@
 import axios, { type AxiosResponse } from 'axios';
-import type { Asset, AssetCategory, CreateAssetDto, UpdateAssetDto, ApiResponse } from '../types';
+import type { Asset, AssetCategory, CreateAssetDto, UpdateAssetDto } from '../types';
 
 // Configuración base de axios
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
@@ -24,8 +24,14 @@ api.interceptors.response.use(
 export const assetService = {
   // Obtener todos los activos
   async getAllAssets(): Promise<Asset[]> {
-    const response: AxiosResponse<Asset[]> = await api.get('/assets');
-    return response.data;
+    try {
+      const response: AxiosResponse<Asset[]> = await api.get('/assets');
+      // Verificar que la respuesta es un array
+      return Array.isArray(response.data) ? response.data : [];
+    } catch (error) {
+      console.error('Error fetching assets:', error);
+      return []; // Devolver array vacío en caso de error
+    }
   },
 
   // Obtener un activo por ID
@@ -53,8 +59,14 @@ export const assetService = {
 
   // Obtener todas las categorías
   async getAllCategories(): Promise<AssetCategory[]> {
-    const response: AxiosResponse<AssetCategory[]> = await api.get('/assets/categories/all');
-    return response.data;
+    try {
+      const response: AxiosResponse<AssetCategory[]> = await api.get('/assets/categories/all');
+      // Verificar que la respuesta es un array
+      return Array.isArray(response.data) ? response.data : [];
+    } catch (error) {
+      console.error('Error fetching categories:', error);
+      return []; // Devolver array vacío en caso de error
+    }
   },
 };
 
