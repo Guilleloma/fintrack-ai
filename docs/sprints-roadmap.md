@@ -64,29 +64,30 @@
 
 ## 🚀 SPRINTS FUTUROS PLANIFICADOS
 
-### Sprint 2: Frontend Foundation 🔄 **PRÓXIMO**
+### Sprint 2: Frontend Foundation 🔄 **EN PROGRESO**
 **Duración Estimada:** 2-3 semanas  
 **Prioridad:** Alta
+**Progreso:** 70% completado
 
 #### 🎨 Interfaz de Usuario Base
-- [ ] Configuración de React/Next.js con TypeScript
-- [ ] Implementación del sistema de diseño base
-- [ ] Componentes UI fundamentales (Button, Input, Card, etc.)
-- [ ] Layout principal con navegación
-- [ ] Configuración de Tailwind CSS o sistema de estilos
+- [x] Configuración de React/Next.js con TypeScript
+- [x] Implementación del sistema de diseño base
+- [x] Componentes UI fundamentales (Button, Input, Card, etc.)
+- [x] Layout principal con navegación (Navbar, Sidebar, Footer)
+- [x] Configuración de Tailwind CSS o sistema de estilos
 - [ ] Implementación de tema claro/oscuro
 
 #### 📱 Páginas Principales
-- [ ] Dashboard principal con resumen de cartera
-- [ ] Página de listado de activos
+- [x] Dashboard principal con resumen de cartera
+- [x] Página de listado de activos
 - [ ] Formularios de creación/edición de activos
 - [ ] Página de categorías
-- [ ] Navegación responsive
+- [x] Navegación responsive
 
 #### 🔗 Integración con Backend
-- [ ] Cliente HTTP para comunicación con API
+- [x] Cliente HTTP para comunicación con API
 - [ ] Manejo de estados con Context API o Zustand
-- [ ] Implementación de loading states y error handling
+- [x] Implementación de loading states y error handling
 - [ ] Validación de formularios en frontend
 
 #### ✅ Testing Frontend
@@ -94,6 +95,12 @@
 - [ ] Tests unitarios para componentes principales
 - [ ] Tests de integración para flujos críticos
 - [ ] Tests de accesibilidad
+
+#### 🐛 Resolución de Issues
+- [x] Fix pantalla en blanco por directivas TailwindCSS malformadas
+- [x] Restauración completa del layout con Sidebar y Footer
+- [x] Corrección de errores de importación de tipos
+- [x] Configuración correcta de React Router
 
 ### Sprint 3: Análisis y Visualización 📊
 **Duración Estimada:** 2-3 semanas  
@@ -202,8 +209,8 @@
 
 ### Progreso General del Proyecto
 - **Completado:** ~25% (Sprint 1)
-- **En Desarrollo:** 0%
-- **Planificado:** ~75% (Sprints 2-6)
+- **En Desarrollo:** 70% (Sprint 2)
+- **Planificado:** ~75% (Sprints 3-6)
 
 ---
 
